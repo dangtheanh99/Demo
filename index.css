@@ -1,0 +1,415 @@
+/* Giao diện List*/
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 20px;
+}
+
+.newsContainer {
+  display: flex;
+  margin-left: 32px;
+  justify-content: center;
+}
+
+.newListing__item {
+  padding-right: 32px;
+  width: 277px;
+}
+
+
+.newListing__item:hover .newListing__item__img img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
+.newListing__item__warp {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.newListing__item__warp::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #bfbfbf;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.newListing__item__warp__title {
+  position: relative;
+  font-family: UVNHongHaHepBold;
+  font-size: 16px;
+  font-weight: 700;
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  z-index: 2;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  cursor: pointer;
+  word-break: break-word;
+  text-transform: uppercase;
+}
+
+.newListing__item__warp__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #f5222d;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.newListing__item__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 208px;
+  min-height: 208px;
+  min-width: 277px;
+  max-width: 277px;
+  position: relative;
+}
+
+.newListing__item__img img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.7s ease;
+  cursor: pointer;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.newListing__item__date {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #595959;
+  font-weight: 400;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.newListing__item__title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 24px;
+  min-height: 48px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.newListing__item__title:hover {
+  color: #f5222d;
+}
+
+.newListing__item__content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #595959;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  font-weight: 400;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+.newListing__item__line {
+  background: #c4c4c4;
+  height: 1px;
+  width: 100%;
+  border-width: 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
+} */
+
+/* Giao diện Grid */
+/* .container__grid {
+  display: flex;
+  justify-content: center;
+  margin-left: 32px;
+  flex-wrap: wrap;
+}
+.newsListing__item {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 30%;
+  padding-right: 32px;
+  min-height: 403px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsListing__item:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
+.newsListing__item__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 277px !important;
+  min-height: 277px;
+  position: relative;
+}
+
+.newsListing__item__img img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.7s ease;
+  cursor: pointer;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.newsListing__item__img__overlay {
+  position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    transparent 15%,
+    rgba(0, 0, 0, 0.24)
+  );
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.newsListing__item__date {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #595959;
+  font-weight: 400;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.newsListing__item__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-height: 48px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+} */
+
+/* Giao diện Carousel */
+
+body {
+  padding: 32px;
+}
+
+.container__carousel {
+  color: black;
+}
+
+.newsListing__item {
+}
+
+/* .newsListing__item:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+} */
+
+.newsListing__item__warpCarousel {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.newsListing__item__warpCarousel__title {
+  position: relative;
+  font-family: UVNHongHaHepBold;
+  font-size: 24px;
+  font-weight: 700;
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  z-index: 2;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  cursor: pointer;
+  word-break: break-word;
+  text-transform: uppercase;
+  width: auto;
+  margin-bottom: 38px;
+  font-size: 24px;
+  color: #000;
+  padding-bottom: 0;
+}
+
+.newsListing__item__imgCarousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0;
+  max-height: 380px !important;
+  min-height: 380px !important;
+}
+
+.newsListing__item__imgCarousel img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.7s ease;
+  cursor: pointer;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.newsListing__item__imgCarousel__overlay {
+  position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    transparent 15%,
+    rgba(0, 0, 0, 0.24)
+  );
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.newsListing__item__content {
+  background: #f5f5f7;
+  padding: 16px 24px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* .newsListing__item__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-height: 48px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.newsListing__item__dateCarousel {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #595959;
+  font-weight: 400;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0;
+}
